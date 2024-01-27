@@ -43,11 +43,11 @@ a:hover{
     font-size: 20px;
      
 }
-.nav{
+.men{
     color: #fff;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
+
 .item-7{
     grid-column-start: 1;
     grid-row-start: 2;
@@ -74,7 +74,7 @@ a:hover{
 .item-8{
 
     grid-area: 2/2/2/7;
-    padding: 5% 10% 10% 10%;
+    padding: 13% 10% 10% 10%;
 }
 .item-9 {
     grid-column-start: 1;
@@ -112,7 +112,7 @@ a:hover{
     grid-template-rows: 50px 100px 210px 100px 220px 180px 210px 150px 400px;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     font-family: 'Poppins', sans-serif;
-    padding-top: 13%;
+    padding-top: 10%;
     column-gap: 1%;
     
 }
@@ -269,7 +269,6 @@ a:hover{
     grid-row-start: 2;
     text-decoration: none;
     color: #fff; 
-    
 }
 .oservice{
     grid-column-start: 3;
@@ -282,8 +281,11 @@ a:hover{
 }
 .contact{
     grid-column-start: 5;
-    grid-row-start: 2;
-    
+    grid-row-start: 2;  
+}
+.menu{
+    text-decoration: none;
+    color:#fff
 }
 hr{
    border-color: #ff702a;
@@ -300,4 +302,143 @@ hr{
     background-color: #ff702a;
     border-radius: 50%;
     font-size: 22px;
+}
+@media (max-width: 480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .men{
+        display: none;
+    }
+    .item-7{
+        text-align: center;
+        padding: 10% 10% 10% 10%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
+    }
+    .PB{
+        margin: 0 auto
+    }
+    
+    .item-8{
+        padding-left: 22%;
+    }
+    .about{
+        padding: 10% 0% 15% 0%;
+        text-align: center;
+    }
+    .SP{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .SB{
+        margin: 0 auto;
+    }
+    .item-9{
+        order:1;
+        padding: 15%
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+    }
+    .describeFood{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .item-10{
+        margin: 10% 20% 0% 20%;
+        padding-left: 14%;
+        padding-top: 8%;
+        border-bottom: none;
+    }
+    .chburg{
+        margin: 0px 20% 10% 20%;
+    }
+    .item-11{
+        margin: 10% 20% 0% 20%;
+        padding-left: 14%;
+        padding-top: 8%;
+        border-bottom: none;
+    }
+    .sbburg{
+        margin: 0px 20% 10% 20%;
+    }
+    .item-12{
+        margin: 10% 20% 0% 20%;
+        padding-left: 14%;
+        padding-top: 8%;
+        border-bottom: none;
+    }
+    .cfpack{
+        margin: 0px 20% 10% 20%;
+    }
+    .describeServ{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .item-13{
+        padding-top: 15%;
+        padding-left: 12%;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .order{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .item-14{
+        padding-top: 15%;
+        padding-left: 10%;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .shipping{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .item-15{
+        padding-top: 15%;
+        padding-left: 10%;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .delivered{
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 15%;
+    }
+    .cartel{
+        margin: 8% 7% 10% 7%;
+        font-size: 1.2rem;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    hr{
+        border-color: #ff702a;
+        width: 15%;
+    }
+    .mlink{
+        padding-top: 10%;
+        padding-left: 13%;
+        padding-bottom: 8%;
+        
+    }
+    .oservice{
+
+        padding-left: 13%;
+        padding-bottom: 8%;
+    }
+    .information{
+        padding-left: 13%;
+        padding-bottom: 8%;
+    }
+    .contact{
+        padding-left: 36%;  
+    }
 }
