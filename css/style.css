@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media (min-width: 400px) {
+
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,10 +19,23 @@ body{
     font-family: 'Poppins', sans-serif;    
 }
 a:hover{
-    border: 2px solid #087f5b;
+        border: 2px solid #087f5b;
+        height: fit-content;
+        width: 80px;
+        border-radius: 4px;
+        background-color: #ff702a;
+        text-align: center;
+}
+.b:hover{
+    border: 2px solid #ff702a;
     height: fit-content;
-    width:fit-content;
+    width: 120px;
     border-radius: 4px;
+    background-color: #087f5b;
+}
+.item:hover{
+    transform: scale(1.04);
+    transition: transform 0.5s ease-in-out;
 }
 .item-1{
     color: #ff702a;
@@ -54,12 +70,12 @@ a:hover{
     width:120px;
     text-align:center;
     font-size:small;
+    text-decoration: none;
 }
 .item-8{
 
     grid-area: 2/2/2/7;
     padding: 5% 10% 10% 10%;
-    
 }
 .item-9 {
     grid-column-start: 1;
@@ -83,6 +99,7 @@ a:hover{
 }
 .SP{
     color: #fff;
+    font-size: small;
 }
 .SB{
     color: #fff;
@@ -93,10 +110,11 @@ a:hover{
 }
 .container2{
     display: grid;
-    grid-template-rows: 50px 100px 210px 100px 100px 100px 210px 75px 400px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 100px 210px 100px 220px 180px 210px 150px 400px;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     font-family: 'Poppins', sans-serif;
     padding-top: 13%;
+    column-gap: 1%;
     
 }
 .me{
@@ -104,7 +122,7 @@ a:hover{
     text-align:center;
     font-size:small;
     font-weight: bold;
-    grid-area: 1/1/1/4;
+    grid-area: 1/1/1/6;
     padding-top:25px;    
 }
 .describeFood{
@@ -112,31 +130,45 @@ a:hover{
     text-align:center;
     font-size:xx-large; 
     padding-top:15px;
-    grid-area: 2/1/2/4; 
+    grid-area: 2/1/2/6; 
     letter-spacing: 1.5px;
 }
 .item-10{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 3;
-    padding-left: 22%;  
+    padding-left: 22%;
+    padding-top: 15%;
+    background-color: #ffefe8;
+    border: double 7px;
+    border-bottom: none;
 }
 .chburg{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 4;
     text-align: center;
-    color: #fff;
+    color: #000000;
+    background-color: #ffefe8;
+    border: double 7px;
+    border-top: none;
  
 }
 .item-11{
-    grid-column-start: 2;
-    grid-row-start: 3;
-    padding-left: 20%;
-
-}
-.item-12{
     grid-column-start: 3;
     grid-row-start: 3;
     padding-left: 20%;
+    padding-top: 15%;
+    background-color: #ffefe8;
+    border: double 7px;
+    border-bottom: none;
+}
+.item-12{
+    grid-column-start: 4;
+    grid-row-start: 3;
+    padding-left: 20%;
+    padding-top: 15%;
+    background-color: #ffefe8;
+    border: double 7px;
+    border-bottom: none;
 }
 .titFood{
     font-size: 20px;
@@ -146,80 +178,89 @@ a:hover{
     color: #ff702a;
 }
 .sbburg{
-    grid-column-start: 2;
-    grid-row-start: 4;
-    text-align: center;
-    color: #fff;
- 
-}
-.cfpack{
     grid-column-start: 3;
     grid-row-start: 4;
     text-align: center;
-    color: #fff; 
+    color: #000000;
+    background-color: #ffefe8;
+    border:double 7px;
+    border-top: none;
+ 
+}
+.cfpack{
+    grid-column-start: 4;
+    grid-row-start: 4;
+    text-align: center;
+    color: #000000;
+    background-color: #ffefe8;
+    border: double 7px;
+    border-top: none;
 }
 .serv{
     color: #ff702a;
     text-align:center;
     font-size:small;
     font-weight: bold;
-    grid-area: 5/1/5/4;
-    padding-top:75px;    
+    grid-area: 5/1/5/6;
+    padding-top:18%;    
 }
 .describeServ{
     color: #fff;
     text-align:center;
     font-size:xx-large; 
     padding-top:15px;
-    grid-area: 6/1/6/4; 
+    grid-area: 6/1/6/6; 
     letter-spacing: 1.5px;
 }
 .item-13{
-    grid-column-start: 1;
-    grid-row-start: 7;
-    padding-left: 20%;
-}
-.item-14{
     grid-column-start: 2;
     grid-row-start: 7;
     padding-left: 20%;
 }
-.item-15{
+.item-14{
     grid-column-start: 3;
     grid-row-start: 7;
     padding-left: 20%;
 }
+.item-15{
+    grid-column-start: 4;
+    grid-row-start: 7;
+    padding-left: 20%;
+}
 .order{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 8;
     text-align: center;
     color: #ff702a;
 }
 .shipping{
-    grid-column-start: 2;
-    grid-row-start: 8;
-    text-align: center;
-    color: #ff702a;
-}
-.delivered{
     grid-column-start: 3;
     grid-row-start: 8;
     text-align: center;
     color: #ff702a;
 }
+.delivered{
+    grid-column-start: 4;
+    grid-row-start: 8;
+    text-align: center;
+    color: #ff702a;
+    
+}
 .cartel{
-    grid-area: 9/1/9/4;
+    grid-area: 9/2/9/5;
     padding-top: 5%;
-    color: #fff; 
-    margin: 0 auto; 
-    margin-top: 3%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    color: #000000;  
     text-align: center;
     font-size: 3rem;
+    background-color: #ffefe8;
+    border: double 7px;
 }
 .container3{
     display: grid;
-    grid-template-rows: 100px 180px 100px;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 180px 50px;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 1fr;
     font-family: 'Poppins', sans-serif;
     color: #fff; 
 
@@ -251,7 +292,13 @@ hr{
 }
 .TB{
     margin: 0 auto;
+    color: #fff;
     background-color: #ff702a;
-    width:120px;
+    width: 120px;
     font-size:small;
+}
+.bx{
+    background-color: #ff702a;
+    border-radius: 50%;
+    font-size: 22px;
 }
